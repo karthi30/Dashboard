@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/jquery.circliful.css" rel="stylesheet" type="text/css" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/barchart.css">
+
+  </head>
+  <body>
+ 
+<div class="container-fluid">
+      <div class="row row-offcanvas row-offcanvas-left head-adjust">
+
+        <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2 sidebar-offcanvas" id="sidebar" role="navigation">
+          <div class="list-group">
+            <div href="#" class="list-group-photo"><img class="avatar" src="images/avatar.png">
+              <div class="dropdown">
+                  <button class="btn dropdown-toggle profile-name" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">Newton Barley
+                  <span class="glyphicon glyphicon-menu-down" style="font-size: 10px;"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Profile</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Edit image</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Logout</a></li>
+                  </ul>
+              </div>
+            </div>
+            <span class="list1 list-head"> Main </span>
+            <span class="glyp glyphicon glyphicon-home"></span><a href="#" class="list1">HOME</a>
+            <span class="glyp glyphicon glyphicon-briefcase"></span><a href="#" class="list1">JOBS</a>
+            <span class="glyp glyphicon glyphicon-duplicate"></span><a href="#" class="list1">RESUME</a>
+            <span class="glyp glyphicon glyphicon-list-alt"></span><a href="#" class="list1">TASK</a>
+            <span class="glyp glyphicon glyphicon-calendar"></span><a href="#" class="list1 list-last">CALENDER</a>
+
+             <span class="list1 list-head"> Admin </span>
+            <span class="glyp fa fa-users"></span><a href="#" class="list1">USERS</a>
+            <span class="glyp glyphicon glyphicon-map-marker"></span><a href="#" class="list1">LOCATION</a>
+            <span class="glyp glyphicon glyphicon-tower"></span><a href="#" class="list1">WORKFLOWS</a>
+            <span class="glyp glyphicon glyphicon-education"></span><a href="#" class="list1 active">JOB BOARDS</a>
+            <span class="glyp glyphicon glyphicon-globe"></span><a href="#" class="list1 list-last">SOCIAL</a>
+
+            <span class="list1 list-head"> Categories </span>
+            <span class="check-list"><input type="checkbox" id="check-1" class="list-yellow" ><label for="check-1"></span><p class="check-text">Adminstrative</p>
+            <span class="check-list"><input type="checkbox" id="check-2" class="list-blue" ><label for="check-2"></span><p class="check-text">Design</p>
+            <span class="check-list"><input type="checkbox" id="check-3" class="list-red" ><label for="check-3"></span><p class="check-text">Executive</p>
+            <span class="check-list"><input type="checkbox" id="check-4" class="list-green" ><label for="check-4"></span><p class="check-text list-last-height">Human Resources</p>
+
+            </div>
+        </div><!--/span-->
+        <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 content">
+          <div class="row">
+          <div class="pull-left dash-menu-border">
+            <button type="button" class="btn dash-menu glyphicon glyphicon-menu-hamburger" data-toggle="offcanvas"></button>
+          </div>
+          <div class="search">
+            <span class="glyphicon glyphicon-search glyp-search"></span>
+                    <input type="text" class="search-box" placeholder="Search for a job, task or resume" name="q">
+          </div>
+          <div class="pull-left dash-user-border">
+            <span  class="user-menu glyphicon glyphicon-user"></span>
+          </div>
+          <div class="pull-left dash-user-border">
+            <span  class="user-menu glyphicon glyphicon-save-file"></span>
+          </div>
+          <div class="pull-left dash-user-border">
+            <span  class="user-menu glyphicon glyphicon-th"></span>
+          </div>
+        </div>
+
+  
+  <div class="text-content">
+    <h3>Customer Service Representative</h3>
+    <div class="col-lg-8 col-md-8 col-sm-7 col-xs-12">
+    <p class="content-loc">
+      <span class="glyphicon glyphicon-map-marker glyp-loc"></span><span class="loc-text"> San Francisco, CA </span>
+      <a href="#" class="loc-link">Preview this post</a>
+      </p>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12 open-adjust">
+      <p class=" open-text"><span class="greendot"></span>OPEN</p>
+      <span class=" glyphicon glyphicon-bookmark bookmark"></span>
+      <span class=" glyphicon glyphicon-resize-full bookmark"></span>
+      <span class=" glyphicon glyphicon-trash bookmark"></span>
+    </div>
+  </div>
+  
+      </div><!--/span-->
+
+      </div><!--/row-->
+
+      
+
+  <div class="row row-offcanvas row-offcanvas-left">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 content">
+      <ul class="graph-head">
+        <a class="active1">SUMMARY</a>
+        <a>APPLICANTS</a>
+        <a>JOB BOARD</a>
+        <a>INTERVIEWS</a>
+        <a>ACTIVITIES</a>
+        <a>BOARDCAST</a>
+        <a>NOTIFICATIONS</a>
+      </ul>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 bg-color">
+          <div class=""> 
+      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 piechart" id="myStat" data-dimension="180" data-text=" 3,154" data-info="New Clients" data-width="10" data-fontsize="38" data-percent="35" data-fgcolor="#47BAC1" data-bgcolor="#D9E4EB" ><p class="chart-inner-text">APPLICANTS</p></div>
+
+      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 piechart" id="myStat2" data-dimension="180" data-text=" 1,546" data-info="New Clients" data-width="10" data-fontsize="38" data-percent="54" data-fgcolor="#10A4FA" data-bgcolor="#D9E4EB" ><p class="chart-inner-text">INTERVIEWS</p></div>
+
+      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 piechart" id="myStat3" data-dimension="180" data-text=" 912" data-info="New Clients" data-width="10" data-fontsize="38" data-percent="75" data-fgcolor="#AE69AF" data-bgcolor="#D9E4EB" ><p class="chart-inner-text">FORWARDS</p></div>
+
+      <p class="totals">TOTALS . Out of <span class="total-col">5,321 </span>views</p>
+      </div>
+
+
+      <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12 barchart">
+      <div id="wrapper">
+      <div class="chart">
+        <table id="data-table" border="1" cellpadding="10" cellspacing="0">
+          <thead>
+            <tr>
+              <td>&nbsp;</td>
+              <th scope="col">S</th>
+              <th scope="col">M</th>
+              <th scope="col">T</th>
+              <th scope="col">W</th>
+              <th scope="col">T</th>
+              <th scope="col">F</th>
+              <th scope="col">S</th>
+              <th scope="col">S</th>
+              <th scope="col">M</th>
+              <th scope="col">T</th>
+              <th scope="col">W</th>
+              <th scope="col">T</th>
+              <th scope="col">F</th>
+              <th scope="col">S</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"></th>
+              <td>4080</td>
+              <td>6080</td>
+              <td>6240</td>
+              <td>3520</td>
+              <td>2240</td>
+              <td>4080</td>
+              <td>6080</td>
+              <td>6240</td>
+              <td>3520</td>
+              <td>2240</td>
+              <td>4080</td>
+              <td>6080</td>
+              <td>6240</td>
+              <td>3520</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+  </div>
+  <p class="total-app">APPLICANTS / DAY</p>
+</div>
+
+<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 job-div">
+
+  <div class="job-desc">
+    JOB DESCRIPTION
+    <span class="edit glyphicon glyphicon-pencil"> EDIT</span>
+  </div>
+  <p class="desc1"><span class="desc-left">POSITION TITLE</span>Customer Service Representative</p>
+  <p class="desc1"><span class="desc-left">LOCATION</span>San Francisco, CA</p>
+  <p class="desc1"><span class="desc-left">EMPLOYMENT TYPE</span> Full-time  </p>
+  <p class="desc1"><span class="desc-left">EXPERINCE</span>Mid-level</p>
+  <p class="desc1"><span class="desc-left">STATUS</span>Open </p>
+  <p class="desc1"><span class="desc-left left1">DESCRIPTION</span>The Customer Service Representative N responsible for interacting with and providing quality assistance to Al radical customers, responsible for keeping up-to-date on the various product shim!, helping the bidness reduce customer service wait times while doing a backhand spring and eating a ham sandwich. </p>
+  <p class="desc1"><span class="desc-left">HIRING HEAD</span><img class="avatar1" src="images/avatar.png">Torn Tizzy</p>
+  <p class="desc1 left2"><span class="desc-left ">APPROVED SALARY</span> $58,000 </p>
+</div>
+
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 link-adjust">
+  <p class="facebook "><Span class="fa fa-facebook pull-left"></span> Post to Facebook</p>
+  <p class="twitter "><Span class="fa fa-twitter pull-left"></span> Tweet this job</p>
+  <p class="linkedin "><Span class="fa fa-linkedin pull-left"></span> Post to Linkedin</p>
+  <p class="glyphicon glyphicon-globe link1"> Link to this job</p>
+  <p class="link-text"> Lorern ilasurn dolor amet, consectetur atlipis cing elit Integer monis moue eget veslibper.</p>
+  <div><input type="textbox" class="copy-link" value="http://www.onlineocr.net/con.r"><span class="btn btn-green">COPY</span></div>
+  <p class="bottom-line"></p>
+
+<p class="glyphicon glyphicon-film link1"> Use The Button Widget</p>
+  <p class="link-text"> This widget embecisthe buttons for sharing the job for submitting a resume on your webs.</p>
+  <div><input type="textbox" class="copy-link" value="<script type=text/javascript"><span class="btn btn-green">COPY</span></div>
+  <p class="bottom-line"></p>
+
+  <p class="glyphicon glyphicon-send link1"> Upload Resumes by Email</p>
+  <p class="link-text"> You can automatically upload multiple resumes to this jobbyernailing the address below.</p>
+  <div><input type="textbox" class="copy-link" value="tomtissy@gmail.com"></div>
+
+</div>
+
+
+     </div> <!-- /bg-color -->
+
+</div><!-- /.container -->
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.circliful.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+  $('[data-toggle=offcanvas]').click(function () {
+    if ($('.sidebar-offcanvas').css('background-color') == 'rgb(255, 255, 255)') {
+      $('.list-group-item').attr('tabindex', '-1');
+    } else {
+      $('.list-group-item').attr('tabindex', '');
+    }
+    $('.row-offcanvas').toggleClass('active');
+    
+  });
+});
+</script>
+<script>
+$( document ).ready(function() {
+        $('#myStathalf').circliful();
+    $('#myStat').circliful();
+    $('#myStathalf2').circliful();
+    $('#myStat2').circliful();
+    $('#myStathalf3').circliful();
+    $('#myStat3').circliful();
+    });
+</script>
+
+<script src="js/barchart.js"></script>
+
+  </body>
+</html>
